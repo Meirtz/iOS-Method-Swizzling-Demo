@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF5AA43419266B210036B97F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5AA43319266B210036B97F /* Foundation.framework */; };
+		AF5AA43619266B210036B97F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5AA43519266B210036B97F /* UIKit.framework */; };
+		AF5AA44119266B210036B97F /* iOS_Method_Swizzling_Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5AA44019266B210036B97F /* iOS_Method_Swizzling_Demo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF5AA43019266B210036B97F /* libiOS Method Swizzling Demo.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libiOS Method Swizzling Demo.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5AA43319266B210036B97F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF5AA43519266B210036B97F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AF5AA43A19266B210036B97F /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		AF5AA43B19266B210036B97F /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		AF5AA43D19266B210036B97F /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		AF5AA43E19266B210036B97F /* iOS Method Swizzling Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS Method Swizzling Demo-Prefix.pch"; sourceTree = "<group>"; };
+		AF5AA43F19266B210036B97F /* iOS_Method_Swizzling_Demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS_Method_Swizzling_Demo.h; sourceTree = "<group>"; };
+		AF5AA44019266B210036B97F /* iOS_Method_Swizzling_Demo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Method_Swizzling_Demo.m; sourceTree = "<group>"; };
+		AF5AA44419266B210036B97F /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/lib/0xdeadfa11; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF5AA42C19266B210036B97F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5AA43419266B210036B97F /* Foundation.framework in Frameworks */,
+				AF5AA43619266B210036B97F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF5AA42619266B210036B97F = {
+			isa = PBXGroup;
+			children = (
+				AF5AA43719266B210036B97F /* iOS Method Swizzling Demo */,
+				AF5AA43219266B210036B97F /* Frameworks */,
+				AF5AA43119266B210036B97F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF5AA43119266B210036B97F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF5AA43019266B210036B97F /* libiOS Method Swizzling Demo.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF5AA43219266B210036B97F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF5AA43319266B210036B97F /* Foundation.framework */,
+				AF5AA43519266B210036B97F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF5AA43719266B210036B97F /* iOS Method Swizzling Demo */ = {
+			isa = PBXGroup;
+			children = (
+				AF5AA43F19266B210036B97F /* iOS_Method_Swizzling_Demo.h */,
+				AF5AA44019266B210036B97F /* iOS_Method_Swizzling_Demo.m */,
+				AF5AA43819266B210036B97F /* Package */,
+				AF5AA43C19266B210036B97F /* Supporting Files */,
+			);
+			path = "iOS Method Swizzling Demo";
+			sourceTree = "<group>";
+		};
+		AF5AA43819266B210036B97F /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				AF5AA43919266B210036B97F /* DEBIAN */,
+				AF5AA44219266B210036B97F /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		AF5AA43919266B210036B97F /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				AF5AA43A19266B210036B97F /* control.txt */,
+				AF5AA43B19266B210036B97F /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		AF5AA43C19266B210036B97F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF5AA43D19266B210036B97F /* PackageVersion.plist */,
+				AF5AA43E19266B210036B97F /* iOS Method Swizzling Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF5AA44219266B210036B97F /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				AF5AA44319266B210036B97F /* lib */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		AF5AA44319266B210036B97F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				AF5AA44419266B210036B97F /* 0xdeadfa11 */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AF5AA42D19266B210036B97F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AF5AA42F19266B210036B97F /* iOS Method Swizzling Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5AA44719266B210036B97F /* Build configuration list for PBXNativeTarget "iOS Method Swizzling Demo" */;
+			buildPhases = (
+				AF5AA42B19266B210036B97F /* Sources */,
+				AF5AA42C19266B210036B97F /* Frameworks */,
+				AF5AA42D19266B210036B97F /* Headers */,
+				AF5AA42E19266B210036B97F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Method Swizzling Demo";
+			productName = "iOS Method Swizzling Demo";
+			productReference = AF5AA43019266B210036B97F /* libiOS Method Swizzling Demo.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF5AA42719266B210036B97F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = AF5AA42A19266B210036B97F /* Build configuration list for PBXProject "iOS Method Swizzling Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AF5AA42619266B210036B97F;
+			productRefGroup = AF5AA43119266B210036B97F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF5AA42F19266B210036B97F /* iOS Method Swizzling Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AF5AA42E19266B210036B97F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF5AA42B19266B210036B97F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5AA44119266B210036B97F /* iOS_Method_Swizzling_Demo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AF5AA44519266B210036B97F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		AF5AA44619266B210036B97F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		AF5AA44819266B210036B97F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Method Swizzling Demo/iOS Method Swizzling Demo-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.1.104;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		AF5AA44919266B210036B97F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Method Swizzling Demo/iOS Method Swizzling Demo-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.1.104;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF5AA42A19266B210036B97F /* Build configuration list for PBXProject "iOS Method Swizzling Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5AA44519266B210036B97F /* Debug */,
+				AF5AA44619266B210036B97F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF5AA44719266B210036B97F /* Build configuration list for PBXNativeTarget "iOS Method Swizzling Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5AA44819266B210036B97F /* Debug */,
+				AF5AA44919266B210036B97F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF5AA42719266B210036B97F /* Project object */;
+}
