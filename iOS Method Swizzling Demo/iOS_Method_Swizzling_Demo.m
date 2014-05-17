@@ -28,12 +28,21 @@ static void __attribute__((constructor)) initialize(void){
                                          cancelButtonTitle:@"OK"
                                          otherButtonTitles:nil];
     [alert1 show];//dead
-    Class originalClass = NSClassFromString(@"SBAwayController ");
+    
+    /*Class originalClass = NSClassFromString(@"SBAwayController");
 	Method originalMeth = class_getInstanceMethod(originalClass, @selector(activate));
 	sOriginalImp = method_getImplementation(originalMeth);
 	
-	Method replacementMeth = class_getInstanceMethod(NSClassFromString(@"MCPasscodeManager"), @selector(patchedActivate));
-	method_exchangeImplementations(originalMeth, replacementMeth);//dead
+	Method replacementMeth = class_getInstanceMethod(NSClassFromString(@"iOS_Method_Swizzling_Demo"), @selector(patchedActivate));
+	method_exchangeImplementations(originalMeth, replacementMeth);//dead*/
+    
+    Class originalClass = NSClassFromString(@"Hello");
+	Method originalMeth = class_getInstanceMethod(originalClass, @selector(output));
+	sOriginalImp = method_getImplementation(originalMeth);
+	
+	Method replacementMeth = class_getInstanceMethod(NSClassFromString(@"iOS_Method_Swizzling_Demo"), @selector(patchedActivate));
+	method_exchangeImplementations(originalMeth, replacementMeth);
+    
 }
 
 -(void)patchedActivate{//dead
